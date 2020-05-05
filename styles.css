@@ -1,3 +1,4 @@
+/*styles for BG image*/
 .background {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(Assets/BG.png);
@@ -6,11 +7,11 @@
   background-attachment: fixed;
   background-origin: content-box;
 }
-
+/*text color for navbar*/
 li {
   color: whitesmoke;
 }
-
+/*styles for h2 tag*/
 h2 {
   margin-top: 8px;
   margin-bottom: 0px;
@@ -18,7 +19,7 @@ h2 {
   color: whitesmoke;
   padding-left: 15px;
 }
-
+/*Custom styles for the foot element*/
 footer {
   position: fixed;
   left: 0;
@@ -31,7 +32,7 @@ footer {
   color: whitesmoke;
   text-align: center;
 }
-
+/*Styles for the p,h3,h4 tags-index*/
 p,
 h3,
 h4 {
@@ -41,17 +42,19 @@ h4 {
   color: whitesmoke;
   line-height: 160%;
 }
-
+/*Custom style for the contact page*/
 form {
   margin-bottom: 0px;
   background-color: #343a40;
   border: 3px;
   color: whitesmoke;
 }
+/*styles for the baner tags on the portfolio page*/
 #banner {
   font-size: x-large;
   opacity: 75%;
 }
 
+/*place holder for custom JS*/
 @media screen and (min-width: 640px) {
 }
