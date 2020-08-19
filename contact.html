@@ -44,21 +44,66 @@
       <header class="row-lg-12" style="margin-bottom: 0px;">
           <h2> Contact</h2>
       </header>    
-      <form style="margin-top: 0px; padding: 10px;">
-        <section class="form-group">
-          <label for="formGroupExampleInput">Name:</label>
-            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Your Name Here">
-        </section>
-        <section class="form-group">
-          <label for="exampleFormControlInput1">Email address:</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-        </section>
-        <section class="form-group">
-          <label for="exampleFormControlTextarea1">Message</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
-        </section>
-        <a class="btn btn-light" href="mailto:truittj@gmail.com" role="button">Submit</a>      
-      </form>
+      <form id="contact-form" method="post" action="contact.php" role="form">
+
+        <div class="messages"></div>
+    
+        <div class="controls">
+    
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="form_name">Firstname *</label>
+                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="form_lastname">Lastname *</label>
+                        <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="form_email">Email *</label>
+                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="form_subject">Subject</label>
+                        <input id="form_subject" type="text" name="subject" class="form-control" placeholder="Subject" required="required" data-error="Subject is required.">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="form_message">Message *</label>
+                        <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <input type="submit" class="btn btn-secondary btn-send" value="Send message">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-muted">
+                        <strong>*</strong> These fields are required.
+                    </p>
+                </div>
+            </div>
+        </div>
+    
+    </form>
     </main>  
 
 
@@ -69,7 +114,7 @@
     <footer class="mx-auto bg-dark row-lg-12" style="width: 100%;">
         &copyCopyright
     </footer>
-  
+    <script src="contact.js"></script> 
       <script
         src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
