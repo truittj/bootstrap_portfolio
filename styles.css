@@ -54,6 +54,11 @@ form {
   font-size: x-large;
   opacity: 75%;
 }
+#bannersm {
+  font-size: small;
+  font-style: italic;
+  opacity: 75%;
+}
 
 /*place holder for custom JS*/
 @media screen and (min-width: 640px) {
